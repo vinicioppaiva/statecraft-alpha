@@ -1,0 +1,110 @@
+{
+  "phase": 1,
+  "title": "Fundamentos do Estado",
+  "description": "Avaliação inicial do jogador por meio de conhecimento básico, raciocínio estratégico e dilemas morais.",
+  "rules": {
+    "minScoreBlock1": 6,
+    "minScoreBlock2": 18,
+    "showProfileSummary": true
+  },
+  "questions": [
+    {
+      "id": 1,
+      "block": 1,
+      "type": "text",
+      "question": "Qual é a capital da França?",
+      "answer": "Paris",
+      "points": 1
+    },
+    {
+      "id": 2,
+      "block": 1,
+      "type": "multiple_choice",
+      "question": "Qual destes é um continente?",
+      "options": ["Alemanha", "África", "Groenlândia"],
+      "answer": "África",
+      "points": 2
+    },
+    {
+      "id": 3,
+      "block": 1,
+      "type": "multiple_choice",
+      "question": "Qual moeda é utilizada nos Estados Unidos?",
+      "options": ["Euro", "Dólar", "Libra"],
+      "answer": "Dólar",
+      "points": 3
+    },
+    {
+      "id": 4,
+      "block": 1,
+      "type": "multiple_choice",
+      "question": "Qual destes setores está diretamente ligado à produção de alimentos em larga escala?",
+      "options": ["Agricultura", "Tecnologia", "Turismo"],
+      "answer": "Agricultura",
+      "points": 4
+    },
+    {
+      "id": 5,
+      "block": 1,
+      "type": "multiple_choice",
+      "question": "Qual órgão da ONU possui representação de todos os países-membros e votações não vinculantes?",
+      "options": ["Conselho de Segurança", "Assembleia Geral", "Tribunal Internacional"],
+      "answer": "Assembleia Geral",
+      "points": 5
+    },
+    {
+      "id": 6,
+      "block": 2,
+      "type": "multiple_choice",
+      "difficulty": "adaptive",
+      "question": "Qual ação tende a fortalecer a economia de um país no médio prazo?",
+      "options": ["Investir apenas em consumo interno", "Aumentar impostos sem planejamento", "Investir em infraestrutura e educação"],
+      "answer": "Investir em infraestrutura e educação",
+      "points": 6
+    },
+    {
+      "id": 7,
+      "block": 2,
+      "type": "multiple_choice",
+      "difficulty": "adaptive",
+      "question": "Se um país apresenta crescimento econômico contínuo, mas enfrenta protestos frequentes e crises institucionais, isso revela fragilidade principalmente em:",
+      "options": ["Governança e legitimidade do poder", "Capacidade produtiva", "Relações comerciais externas"],
+      "answer": "Governança e legitimidade do poder",
+      "points": 7
+    },
+    {
+      "id": 8,
+      "block": 2,
+      "type": "multiple_choice",
+      "difficulty": "adaptive",
+      "question": "Mesmo com economia forte, um Estado pode perder influência global quando:",
+      "options": ["Torna-se estrategicamente dependente de um único aliado", "Investe em inovação tecnológica", "Diversifica suas exportações"],
+      "answer": "Torna-se estrategicamente dependente de um único aliado",
+      "points": 8
+    },
+    {
+      "id": 9,
+      "block": 3,
+      "type": "multiple_choice",
+      "question": "Um país vizinho enfrenta uma grave crise humanitária. Qual é sua prioridade?",
+      "options": ["Enviar ajuda humanitária, mesmo com custo econômico", "Apoiar politicamente, buscando influência regional", "Manter neutralidade para proteger recursos internos"],
+      "profileImpact": {
+        "humanitarian": 1,
+        "strategist": 1,
+        "isolationist": 1
+      }
+    },
+    {
+      "id": 10,
+      "block": 3,
+      "type": "multiple_choice",
+      "question": "Se você pudesse voltar no tempo e tivesse a oportunidade de impedir que um bebê que no futuro causaria milhões de mortes crescesse, qual decisão você tomaria?",
+      "options": ["Impediria, priorizando o bem coletivo acima do indivíduo", "Não interferiria, acreditando que ninguém nasce destinado ao mal", "Tentaria mudar seu ambiente e educação, sem eliminá-lo"],
+      "profileImpact": {
+        "utilitarian": 1,
+        "moral_absolutist": 1,
+        "reformist": 1
+      }
+    }
+  ]
+}

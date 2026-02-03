@@ -1,0 +1,78 @@
+.stampsWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  /* Garante que o espaço ocupado pelos carimbos seja sempre o mesmo */
+  min-height: 70px; 
+}
+
+.stampsContainer {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  /* Largura máxima pensada para 8 carimbos de 45px + gaps */
+  max-width: 500px; 
+}
+
+.stampSlot {
+  position: relative;
+  /* Tamanho fixo ideal para caber 8 na largura da folha */
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0.1); /* Borda sólida mas clara */
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.02); /* Leve fundo para marcar o local */
+}
+
+.placeholderNumber {
+  font-family: 'Special Elite', Courier, monospace;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.stampImage {
+  position: absolute;
+  /* O carimbo é maior que o círculo para dar o efeito de "extravasar" a borda */
+  width: 65px; 
+  height: 65px;
+  z-index: 2;
+  pointer-events: none;
+  filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.3));
+  
+  /* Animação de batida */
+  animation: stampSlam 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+}
+
+@keyframes stampSlam {
+  0% {
+    transform: scale(2.5) rotate(15deg);
+    opacity: 0;
+  }
+  100% {
+    /* Rotação final levemente aleatória (pode ser fixa aqui para simplicidade) */
+    transform: scale(1) rotate(-8deg);
+    opacity: 0.95;
+  }
+}
+
+/* Ajuste para telas muito pequenas */
+@media (max-width: 480px) {
+  .stampsContainer {
+    gap: 8px;
+  }
+  .stampSlot {
+    width: 38px;
+    height: 38px;
+  }
+  .stampImage {
+    width: 55px;
+    height: 55px;
+  }
+}

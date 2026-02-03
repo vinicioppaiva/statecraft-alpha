@@ -1,0 +1,31 @@
+.footerContainer {
+  width: 100%;
+  margin-top: auto;
+  position: relative;
+}
+
+.interactiveLayer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: -15px; /* Faz os elementos "subirem" para cima da barra */
+  z-index: 5;
+}
+
+.legalBar {
+  border-top: 1px solid #333;
+  padding: 15px 0;
+  background-color: rgba(0,0,0,0.03); /* Leve tom para o retângulo azul */
+}
+
+.footerLegalText {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.7rem;
+  color: #666;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .interactiveLayer { flex-direction: column; gap: 10px; margin-bottom: 5px; }
+}

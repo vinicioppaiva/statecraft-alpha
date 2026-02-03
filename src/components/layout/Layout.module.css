@@ -1,0 +1,45 @@
+/* src/components/layout/Layout.module.css */
+
+.mapWrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .mapWrapper {
+    /* Usa a variável definida no JSX */
+    background-image: var(--map-bg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.paperSheet {
+  /* Usa a variável definida no JSX */
+  background-image: var(--paper-bg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 25px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .paperSheet {
+    width: 850px;
+    min-height: 90vh;
+    margin: 20px auto;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  }
+}

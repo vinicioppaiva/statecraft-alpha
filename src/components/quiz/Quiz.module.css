@@ -1,0 +1,114 @@
+/* src/components/quiz/Quiz.module.css */
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 0;
+  animation: typewriterEffect 0.6s ease-out;
+}
+
+/* QuestionDescription */
+.descriptionWrapper {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 1.5rem;
+  border-left: 5px solid #1a1a1a;
+  border-radius: 2px;
+}
+
+.descriptionText {
+  font-family: 'Special Elite', monospace;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #222;
+  margin: 0;
+}
+
+/* Interaction Area */
+.interactionArea {
+  padding: 0 0.5rem;
+}
+
+/* TextInput Styles */
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.inputLabel {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.75rem;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+.textField {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #333;
+  font-family: 'Special Elite', monospace;
+  font-size: 1.3rem;
+  padding: 8px 0;
+  outline: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* OptionsList Styles */
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.optionItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.1s ease;
+}
+
+.optionItem:hover {
+  transform: translateX(5px);
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Special Elite', monospace;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.optionText {
+  font-family: 'Special Elite', monospace;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+/* Estado Selecionado */
+.selected .checkbox {
+  background: #333;
+  color: #fff;
+}
+
+.selected .checkbox::after {
+  content: "X";
+}
+
+.selected .optionText {
+  font-weight: bold;
+  color: #000;
+}
+
+@keyframes typewriterEffect {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
