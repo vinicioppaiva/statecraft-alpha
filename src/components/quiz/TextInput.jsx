@@ -1,4 +1,3 @@
-// src/components/quiz/TextInput.jsx
 import styles from './Quiz.module.css';
 
 const TextInput = ({ value, onChange }) => {

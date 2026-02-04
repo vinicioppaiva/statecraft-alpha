@@ -1,4 +1,3 @@
-// src/pages/Result.jsx
 import Layout from '../components/layout/Layout';
 import { useGame } from '../context/GameContext';
 

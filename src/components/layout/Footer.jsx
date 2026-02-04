@@ -1,4 +1,3 @@
-// src/components/layout/Footer.jsx
 import styles from './Footer.module.css';
 import ProgressStamps from '../ProgressStamps';
 import ButtonNext from '../ButtonNext';

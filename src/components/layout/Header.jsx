@@ -1,4 +1,3 @@
-// src/components/layout/Header.jsx
 import styles from './Header.module.css';
 import Timer from '../Timer';
 

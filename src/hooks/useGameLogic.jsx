@@ -1,4 +1,3 @@
-// src/hooks/useGameLogic.jsx
 import { useState, useEffect } from 'react';
 import questionsData from '../data/questions.json';
 

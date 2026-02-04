@@ -1,4 +1,3 @@
-// src/App.jsx
 import { GameProvider, useGame } from './context/GameContext';
 import Landing from './pages/Landing';
 import QuizPage from './pages/QuizPage';

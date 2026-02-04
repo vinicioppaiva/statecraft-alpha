@@ -1,6 +1,5 @@
-// src/components/layout/Layout.jsx
 import styles from './Layout.module.css';
-import mapaImg from '../../assets/mapa.png';  // Verifique se o caminho ../.. chega na pasta src
+import mapaImg from '../../assets/mapa.png'; 
 import folhaImg from '../../assets/folha.png';
 
 const Layout = ({ children }) => {
