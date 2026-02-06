@@ -18,7 +18,7 @@ const OptionsList = ({ options, selectedOption, onSelect }) => {
           <span className={styles.checkbox}>
             {selectedOption === index ? 'X' : ''}
           </span>
-          <span className={styles.optionText}>{option.text}</span>
+          <span className={styles.optionText}>{option}</span>
         </label>
       ))}
     </div>

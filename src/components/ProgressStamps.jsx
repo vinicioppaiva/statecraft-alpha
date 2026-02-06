@@ -13,7 +13,7 @@ const ProgressStamps = ({ history = [], totalQuestions = 5 }) => {
 
           return (
             <div key={index} className={styles.stampSlot}>
-              <span className={styles.placeholderNumber}>{index + 1}</span>
+               <span className={styles.placeholderNumber}>{index + 1}</span>
               
               {status === true && (
                 <img src={stampGreen} alt="Correto" className={styles.stampImage} />
