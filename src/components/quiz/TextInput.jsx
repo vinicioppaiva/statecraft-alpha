@@ -3,7 +3,7 @@ import styles from './Quiz.module.css';
 const TextInput = ({ value, onChange }) => {
   return (
     <div className={styles.inputWrapper}>
-      <label className={styles.inputLabel}>IDENTIFICAÇÃO DO AGENTE / PROTOCOLO:</label>
+      <label className={styles.inputLabel}></label>
       <input
         type="text"
         className={styles.textField}
