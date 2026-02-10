@@ -13,8 +13,7 @@ const ProgressStamps = ({ history = [], totalQuestions = 5 }) => {
 
           return (
             <div key={index} className={styles.stampSlot}>
-               <span className={styles.placeholderNumber}>{index + 1}</span>
-              
+              {/* Só renderiza a imagem se a questão já foi respondida */}
               {status === true && (
                 <img src={stampGreen} alt="Correto" className={styles.stampImage} />
               )}
@@ -28,4 +27,5 @@ const ProgressStamps = ({ history = [], totalQuestions = 5 }) => {
     </div>
   );
 };
+
 export default ProgressStamps;

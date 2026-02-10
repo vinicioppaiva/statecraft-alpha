@@ -15,7 +15,6 @@ const Footer = ({ history, totalQuestions, onNext, canNext }) => {
         </div>
       </div>
 
-      {/* Faixa de Texto (Base Azul) */}
       <div className={styles.legalBar}>
         <p className={styles.footerLegalText}>
           2026 - DESENVOLVIDO POR VINICIO PAULO DE PAIVA

@@ -4,12 +4,15 @@ import sealImg from '../assets/botao-next.png';
 const ButtonNext = ({ onClick, disabled }) => {
   return (
     <button 
-      className={styles.sealButton} 
+      className={styles.sealContainer} 
       onClick={onClick} 
       disabled={disabled}
     >
-      <img src={sealImg} alt="Decidir" />
-      <span className={styles.sealText}>DECIDIR</span>
+      <img 
+        src={sealImg} 
+        alt="Lacre de Cera" 
+        className={styles.sealImage} 
+      />
     </button>
   );
 };

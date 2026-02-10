@@ -2,58 +2,44 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  justify-content: center; /* Garante centralização vertical */
+  gap: 4px; /* Reduzi o espaço entre imagem e texto */
   cursor: pointer;
   background: none;
   border: none;
-  padding: 10px;
+  padding: 5px; /* Reduzi o padding */
   transition: transform 0.2s ease;
   position: relative;
-}
-
-.sealContainer:hover:not(:disabled) {
-  transform: translateY(-5px);
-}
-
-.sealContainer:active:not(:disabled) {
-  transform: translateY(2px) scale(0.95);
-}
-
-.sealContainer:disabled {
-  filter: grayscale(1) opacity(0.5);
-  cursor: not-allowed;
+  height: 100%; /* Ocupa a altura total disponível no footer */
 }
 
 .sealImage {
-  width: 70px; /* Tamanho do Sinete de cera */
+  width: 50px; /* Reduzido de 70px para 50px */
   height: auto;
-  filter: drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
   transition: filter 0.2s ease;
-}
-
-.sealContainer:hover .sealImage {
-  filter: drop-shadow(6px 10px 12px rgba(0, 0, 0, 0.5));
 }
 
 .sealText {
   font-family: 'Special Elite', monospace;
-  font-size: 0.9rem;
-  color: #5c1a1a; /* Tom de vermelho lacre/sangue seco */
+  font-size: 0.75rem; /* Reduzido para não brigar com a imagem */
+  color: #5c1a1a;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  line-height: 1; /* Evita que o texto empurre o container para baixo */
 }
 
-/* Efeito de brilho sutil no lacre */
+/* Ajuste do brilho para a nova escala */
 .sealContainer::after {
   content: '';
   position: absolute;
-  top: 20%;
-  left: 30%;
-  width: 15px;
-  height: 10px;
+  top: 25%;
+  left: 35%;
+  width: 10px;
+  height: 8px;
   background: rgba(255, 255, 255, 0.2);
-  filter: blur(5px);
+  filter: blur(4px);
   border-radius: 50%;
   pointer-events: none;
 }

@@ -14,9 +14,8 @@
 }
 
 .legalBar {
-  border-top: 1px solid #333;
   padding: 15px 0;
-  background-color: rgba(0,0,0,0.03); /* Leve tom para o retângulo azul */
+  background-color: rgba(0,0,0,0.03);/*  Leve tom para o retângulo azul */
 }
 
 .footerLegalText {
